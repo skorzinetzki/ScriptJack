@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ScriptJack</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blackjack.css" rel="stylesheet">
+</head>
+<body>
+<header class="scriptjack" id="overview">
+    <div class="container">
+        <h1>ScriptJack</h1>
+
+        <p class="lead">based on the codecadamy javascript tutorial</p>
+
+        <p>Enter your name and start a game. You can get another card by using the "Hit!" button, when you are finished
+            use the "Stand" button. Good Luck!</p>
+
+        <form class="form-inline">
+            <div class="input-append">
+                <input class="input-large" placeholder="your name..." id="userNameInput" type="text">
+                <button id="startGame" class="btn btn-primary" type="button" disabled>Start new game!</button>
+            </div>
+        </form>
+    </div>
+</header>
+<div class="container">
+    <div id="gameStatus" class="alert alert-info">Game has not been started!</div>
+    <div class="row">
+        <div class="span6">
+            <h2 id="userName">You!</h2>
+
+            <div class="well well-small">
+                <h3>Cards</h3>
+
+                <div id="userCards"><span class="card-image deck"></span><span class="card-image deck"></span></div>
+                <h3>Score</h3>
+
+                <p id="userScore">no score...</p>
+            </div>
+            <div class="form-inline">
+                <button type="submit" id="hit" class="btn btn-success" disabled>Hit!</button>
+                <button type="submit" id="stand" class="btn btn-danger" disabled>Stand</button>
+            </div>
+        </div>
+        <div class="span6">
+            <h2>Dealer</h2>
+
+            <div class="well well-small">
+                <h3>Cards</h3>
+
+                <div id="dealerCards"><span class="card-image deck"></span><span class="card-image deck"></span></div>
+                <h3>Score</h3>
+
+                <p id="dealerScore">no score...</p>
+            </div>
+        </div>
+    </div>
+    <h2>Your overall score <span id="wonBadge" class="badge badge-success">0</span> <span id="drawBadge"
+                                                                                          class="badge badge-warning">0</span>
+        <span id="lostBadge" class="badge badge-important">0</span></h2>
+
+    <div class="progress progress-striped active">
+        <div id="wonBar" class="bar bar-success" style="width: 0"></div>
+        <div id="drawBar" class="bar bar-warning" style="width: 0"></div>
+        <div id="lostBar" class="bar bar-danger" style="width: 0"></div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blackjack.js"></script>
+<script>
+    $(document).ready(function () {
+        var game = new GameManager();
+        $("#startGame").on("click", function (event) {
+            game.playGame();
+        });
+        $("#hit").on("click", function (event) {
+            game.playerHit();
+        });
+        $("#stand").on("click", function (event) {
+            game.playerStand();
+        });
+        $("#startGame").prop("disabled", false);
+    });
+</script>
+</body>
+</html>

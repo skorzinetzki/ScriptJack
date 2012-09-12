@@ -1,0 +1,233 @@
+.scriptjack {
+    background: rgb(197, 222, 234); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(197, 222, 234, 1)), color-stop(31%, rgba(138, 187, 215, 1)), color-stop(100%, rgba(6, 109, 171, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%); /* IE10+ */
+    background: linear-gradient(135deg, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(6, 109, 171, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#c5deea', endColorstr = '#066dab', GradientType = 1); /* IE6-9 fallback on horizontal gradient */
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+    margin-bottom: 2em;
+}
+
+.card-image {
+    width: 57px;
+    height: 81px;
+    margin: 2px;
+    display: inline-block;
+    background: url('../img/oxygen-white.png');
+}
+
+.hearts-ace {
+    background-position: -4px -3px;
+}
+
+.hearts-2 {
+    background-position: -64px -3px;
+}
+
+.hearts-3 {
+    background-position: -125px -3px;
+}
+
+.hearts-4 {
+    background-position: -185px -3px;
+}
+
+.hearts-5 {
+    background-position: -246px -3px;
+}
+
+.hearts-6 {
+    background-position: -307px -3px;
+}
+
+.hearts-7 {
+    background-position: -367px -3px;
+}
+
+.hearts-8 {
+    background-position: -428px -3px;
+}
+
+.hearts-9 {
+    background-position: -488px -3px;
+}
+
+.hearts-10 {
+    background-position: -549px -3px;
+}
+
+.hearts-jack {
+    background-position: -609px -3px;
+}
+
+.hearts-queen {
+    background-position: -670px -3px;
+}
+
+.hearts-king {
+    background-position: -730px -3px;
+}
+
+.spades-ace {
+    background-position: -4px -87px;
+}
+
+.spades-2 {
+    background-position: -64px -87px;
+}
+
+.spades-3 {
+    background-position: -125px -87px;
+}
+
+.spades-4 {
+    background-position: -185px -87px;
+}
+
+.spades-5 {
+    background-position: -246px -87px;
+}
+
+.spades-6 {
+    background-position: -307px -87px;
+}
+
+.spades-7 {
+    background-position: -367px -87px;
+}
+
+.spades-8 {
+    background-position: -428px -87px;
+}
+
+.spades-9 {
+    background-position: -488px -87px;
+}
+
+.spades-10 {
+    background-position: -549px -87px;
+}
+
+.spades-jack {
+    background-position: -609px -87px;
+}
+
+.spades-queen {
+    background-position: -670px -87px;
+}
+
+.spades-king {
+    background-position: -730px -87px;
+}
+
+.diamonds-ace {
+    background-position: -4px -171px;
+}
+
+.diamonds-2 {
+    background-position: -64px -171px;
+}
+
+.diamonds-3 {
+    background-position: -125px -171px;
+}
+
+.diamonds-4 {
+    background-position: -185px -171px;
+}
+
+.diamonds-5 {
+    background-position: -246px -171px;
+}
+
+.diamonds-6 {
+    background-position: -307px -171px;
+}
+
+.diamonds-7 {
+    background-position: -367px -171px;
+}
+
+.diamonds-8 {
+    background-position: -428px -171px;
+}
+
+.diamonds-9 {
+    background-position: -488px -171px;
+}
+
+.diamonds-10 {
+    background-position: -549px -171px;
+}
+
+.diamonds-jack {
+    background-position: -609px -171px;
+}
+
+.diamonds-queen {
+    background-position: -670px -171px;
+}
+
+.diamonds-king {
+    background-position: -730px -171px;
+}
+
+.clubs-ace {
+    background-position: -4px -255px;
+}
+
+.clubs-2 {
+    background-position: -64px -255px;
+}
+
+.clubs-3 {
+    background-position: -125px -255px;
+}
+
+.clubs-4 {
+    background-position: -185px -255px;
+}
+
+.clubs-5 {
+    background-position: -246px -255px;
+}
+
+.clubs-6 {
+    background-position: -307px -255px;
+}
+
+.clubs-7 {
+    background-position: -367px -255px;
+}
+
+.clubs-8 {
+    background-position: -428px -255px;
+}
+
+.clubs-9 {
+    background-position: -488px -255px;
+}
+
+.clubs-10 {
+    background-position: -549px -255px;
+}
+
+.clubs-jack {
+    background-position: -609px -255px;
+}
+
+.clubs-queen {
+    background-position: -670px -255px;
+}
+
+.clubs-king {
+    background-position: -730px -255px;
+}
+
+.deck {
+    background-position: -4px -339px;
+}
